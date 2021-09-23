@@ -1,0 +1,10 @@
+.fon40{
+font-size: 40px
+}
+.bg1 {
+ background-image: url("pics/png/1.png");
+}
+.slider-wrapper { 
+	width: 80%; 
+	margin: 10px auto;
+}

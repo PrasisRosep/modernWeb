@@ -2,28 +2,326 @@
 {% load static %}
 
 {% block content %}
-    <div class="content-section container m-5 bg-light mx-auto shadow p-5">
-        <h4>All blog Posts</h4>
-        {% for post in post %}
 
+          <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-        <div class="border p-2 mb-2 border-bottom">
-            
-            <div>
-                <small>Post by: <a class="mr-2 " href="#">{{ post.author }}</a></small><br>
-                <small class="text-muted">{{ post.createdAt|date:"F d, Y" }}</small>
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url(images/1.jpg);">
+          <div class="carousel-container">
+            <div class="carousel-content animate__animated animate__fadeInUp">
+              <h2>Welcome to <span>Sleshmantak</span></h2>
+              <p>“Social Work Initiative for Project Earthlyness”</p>
+              <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
             </div>
-
-            <div>
-                <h3><a class="article-title" href="{% url 'detailPost' post.id %}">{{ post.title }}</a></h3>
-                <p>{{ post.body|slice:":200"  }}...</p>
-            </div>
-
+          </div>
         </div>
-        
-        
-        
-        {% endfor %}
-       
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url(images/2.jpg);  background-size: contain;">
+          <div class="carousel-container">
+            <div class="carousel-content animate__animated animate__fadeInUp">
+              <h2>Aim:</h2>
+              <p>[Building a network of anonymous volunteers' platform working through Water, Air and Soil(WAS) conservation programs while ensuring Social, Economical, Political, Modern and Physical development to bring the balance of equality between human and nature while promising equity within the society.]</p><div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url(images/3.jpg);  ">
+          <div class="carousel-container">
+            <div class="carousel-content animate__animated animate__fadeInUp">
+              <h2>Believe : We can</h2>
+              <p>“The history of the world is the history of a few men who had faith in themselves” <br/>- swami vivekananda	</p>
+			  <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
+            </div> 
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
     </div>
+  </section><!-- End Hero -->
+
+
+
+        <!-- ======= About Us Section ======= -->
+        <section id="about-us" class="about-us">
+            <div class="container" data-aos="fade-up">
+      
+              <div class="row content">
+                <div class="col-lg-6" data-aos="fade-right">
+                  <h2>Preface</h2>
+                  <h3>It’s time to realize that “I” exist in “We”. It’s time to use our faith, our hope and our courage for our dignified identity of mankind. Let’s decide what we will do and what we will never do. Let’s try to be better and revive that sharing happiness and living for each other is our identity. Let us not forget, there are no chosen ones, it’s just about the choices one makes. Each does exist in the uniqueness of diversity. It’s time for us to remind that patience for pain, tolerance for sorrow, humility for happiness, sentiment for sadness and humour for foolishness are our greatest virtues.</h3>
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
+                  <p>
+                    We are together here because we have a dream. Dream of an empowered society and an amazing nature to live with… We believe that we need to make necessary adjustments for a much secure future. We believe that steps should be taken as our previous generations did for the betterment of society. We should accept the necessity and act upon it.
+                  Mother Nature is lonely. Her children are being extinct and undergoing sufferings because of mankind’s actions. Air and water-borne diseases are everywhere. Humanity is facing hunger and scarcity in this twenty-first century. We don’t have a proper crisis plan for all. Mankind is still dying in the lack of medical support. And again children, maternity cases, disabled and elderly people are waiting for extra addressing that we are busy with self-existence, power, ego and fame. And above all, we have a large number of less & semi-skilled people, under-educated society and very fewer intellect people which at a time-frame could cause a formation of a void, affecting the productivity and performance of mankind. How would the upcoming generation be groomed up in this context!
+                  It’s time to act to fulfil god’s will and not to fall into the trap of the word “freedom”.
+                  </p>
+                   <p class="fst-italic">
+                   Doing everything for our best adaptation and improving our way of approach of co-existence entirely depends upon the awareness that we flourish because of Water, Air and Soil. So taking these essential elements in mind as we upgrade ourselves is the best way to heal and revive ourselves. We all know we should let the universe act as well while we act. Let’s focus on an individual’s necessity towards preserving nature and thinking about society.
+                  </p>
+                </div>
+              </div>
+      
+            </div>
+          </section><!-- End About Us Section -->
+      
+          <!-- ======= Missions Section ======= -->
+          <section class="mission" >
+            <div class="container" data-aos="fade-up">
+              <button type="button" class="btn btn-primary fon40" >Our missions :</button>
+      
+              <div class="row">
+                <div class="col-lg-4 col-md-6 d-flex bg1align-items-stretch bg1" data-aos="zoom-in" data-aos-delay="100" >
+                  <div class="icon-box bg1" style="background-image: url(images/png/1.png);  background-repeat:no-repeat; background-size: cover;">
+                      
+                    <h4><a href="Child care">Child care</a></h4>
+                    <p style="background-color: rgba(255, 0, 0, 0.3);">To work on child education, child health, nutrition and child rights.</p>
+                  </div>
+                </div>
+      
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="icon-box" style="background-image: url(images/png/2.png);  background-size: cover;">
+                    <h4><a href="">Social Issues</a></h4>
+                    <p style="background-color: rgba(255, 0, 0, 0.3);">To conduct programs ensuring maternity security, human rights and equity issues.</p>
+                  </div>
+                </div>
+      
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="icon-box" style="background-image: url(images/png/3.png);  background-size: cover;">
+                    <h4><a href="">Ecology</a></h4>
+                    <p style="background-color: rgba(255, 0, 0, 0.3);">Launch conservation programs on water, air and soil for the betterment of ecology via organic movements and ecological campaigns.</p>
+                  </div>
+                </div>
+      
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="icon-box" style="background-image: url(images/png/4.png);  background-size: cover;">
+                    <h4><a href="">Disaster and Crisis</a></h4>
+                    <p style="background-color: rgba(255, 0, 0, 0.3);">An anonymous platform on disaster and crisis reinforcement and support services.</p>
+                  </div>
+                </div>
+      
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="icon-box" style="background-image: url(images/png/5.png);  background-repeat:no-repeat; background-size: contain;">
+                    <h4><a href="">Agriculture	</a></h4>
+                    <p style="background-color: rgba(255, 0, 0, 0.3);">To initiate and bring innovations on multifunctional learning-hub, based on agriculture for the basics of life.</p>
+                  </div>
+                </div>
+      
+            </div>
+          </section><!-- End Missions Section -->
+      
+          <!-- ======= Portfolio Section ======= -->
+          <section id="portfolio" class="portfolio">
+            <div class="container">
+              <button type="button" class="btn btn-primary fon40" >Gallery :</button>
+      
+              <div class="row" data-aos="fade-up">
+                <div class="col-lg-12 d-flex justify-content-center">
+                  <ul id="portfolio-flters">
+                    <li data-filter="*" class="filter-active">All</li>
+                    <li data-filter=".filter-app">App</li>
+                    <li data-filter=".filter-card">Card</li>
+                    <li data-filter=".filter-web">Web</li>
+                  </ul>
+                </div>
+              </div>
+      
+              <div class="row portfolio-container" data-aos="fade-up">
+      
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                  <img src="images/apps/child1.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Child 1</h4>
+                    <p></p>
+                   </div>
+                </div>
+      
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                  <img src="images/apps/agri1.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Agriculture 1</h4>
+                    <p>Web</p>
+                    <a href="#" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+                  </div>
+                </div>
+      
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                  <img src="images/apps/child2.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Child 2</h4>
+                    <p>App</p>
+                    <a href="#" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+                   </div>
+                </div>
+      
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                  <img src="images/apps/was1.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Water Air Soil</h4>
+                    <p></p>
+                    <a href="all_files/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+      
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                  <img src="images/apps/agri2.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Agriculture 2</h4>
+                    <p>Web</p>
+                    <a href="all_files/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+      
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                  <img src="images/apps/child3.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Child 3</h4>
+                    <p>App</p>
+                    <a href="images/apps/child1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+      
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                  <img src="images/apps/was2.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Water Air Soil 2</h4>
+                    <p>Card</p>
+                    <a href="images/apps/was2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+      
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                  <img src="images/apps/was3.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Water Air Soil 3</h4>
+                    <p>Card</p>
+                    <a href="images/apps/was3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+      
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                  <img src="images/apps/agri3.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Agriculture 3</h4>
+                    <p>Web</p>
+                    <a href="all_files/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+      
+              </div>
+      
+            </div>
+          </section><!-- End Portfolio Section -->
+      
+          <!-- ======= Our Clients Section ======= -->
+          <section id="clients" class="clients">
+            <div class="container" data-aos="fade-up">
+      
+              <div class="section-title">
+                <h2>Clients</h2>
+              </div>
+      
+              <div class="row no-gutters clients-wrap clearfix" data-aos="fade-up">
+      
+                <div class="col-lg-3 col-md-4 col-6">
+                  <div class="client-logo">
+                    <img src="images/profile/1.jpg" class="img-fluid" alt=""><br/>
+                    
+                  </div>
+                  <h1 >Gautam Silwal</h1>
+                    <p>Chairman</P>
+                </div>
+      
+                <div class="col-lg-3 col-md-4 col-6">
+                  <div class="client-logo">
+                    <img src="images/profile/2.jpg" class="img-fluid" alt="">
+                  </div>
+                  <h1 > Prasis Gautam</h1>
+                    <p>Technology Director</P>
+                </div>
+      
+                <div class="col-lg-3 col-md-4 col-6">
+                  <div class="client-logo">
+                    <img src="images/profile/3.jpg" class="img-fluid" alt="">
+                  </div>
+                  <h1> Kristina Fluff</h1>
+                  <p>General Director</p>
+                </div>
+      
+                <div class="col-lg-3 col-md-4 col-6">
+                  <div class="client-logo">
+                    <img src="images/profile/4.jpg" class="img-fluid" alt="">
+                  </div>
+                  <h1>Pawin Shrestha</h1>
+                    <p>Finance Head</P>
+                </div>
+      
+                <div class="col-lg-3 col-md-4 col-6">
+                  <div class="client-logo">
+                    <img src="images/profile/5.jpg" class="img-fluid" alt="">
+                  </div>
+                  <h1> Dipen Ghimire</h1>
+                    <p>Strategic Head</P>
+                </div>
+      
+                <div class="col-lg-3 col-md-4 col-6">
+                  <div class="client-logo">
+                    <img src="images/profile/6.jpg" class="img-fluid" alt="">
+                  </div>
+                  <h1> Manisha Chaudhaary</h1>
+                    <p> Accounts Head</P>
+                </div>
+      
+                <div class="col-lg-3 col-md-4 col-6">
+                  <div class="client-logo">
+                    <img src="images/profile/7.jpg" class="img-fluid" alt="">
+                  </div>
+                  <h1> Salena Gomez </h1>
+                    <p> Cirriculum/Event Manager</P>
+                </div>
+      
+                <div class="col-lg-3 col-md-4 col-6">
+                  <div class="client-logo">
+                    <img src="images/profile/8.jpg" class="img-fluid" alt="">
+                  </div>			  
+                  <h1>Mani Raj Kandel</h1>
+                    <p>Security Head</P>
+                </div>
+      
+              </div>
+      
+            </div>
+          </section><!-- End Our Clients Section -->
+      
+      
+
+
+
+
+
+
+   
 {% endblock content %}

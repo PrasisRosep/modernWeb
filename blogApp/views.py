@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
-from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView, TemplateView
 from .models import BlogPost
 
 
@@ -17,9 +17,39 @@ class NewPost(LoginRequiredMixin, CreateView):
 
 class AllPost(ListView):
     model = BlogPost
-    template_name = 'blogApp/index.html'
+    template_name = 'blogApp/blog.html'
     context_object_name = 'post'
     ordering = ['-createdAt']
+
+class Index(TemplateView):
+    template_name='blogApp/index.html'
+
+class Gallery(TemplateView):
+    template_name='blogApp/gallery.html'
+
+class About(TemplateView):
+    template_name='blogApp/about.html'
+    
+class Agriculture(TemplateView):
+    template_name='blogApp/agriculture.html'
+
+class Contact(TemplateView):
+    template_name='blogApp/contact.html'
+
+class Donate(TemplateView):
+    template_name='blogApp/donate.html'
+
+class Ecology(TemplateView):
+    template_name='blogApp/ecology.html'
+
+class Portfolio(TemplateView):
+    template_name='blogApp/portfolio.html'
+
+class Social(TemplateView):
+    template_name='blogApp/social.html'
+
+class Child(TemplateView):
+    template_name='blogApp/child.html'
 
 
 class DetailPost(DetailView):
