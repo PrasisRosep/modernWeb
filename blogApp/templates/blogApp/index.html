@@ -8,9 +8,9 @@
     <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
       <div class="carousel-inner" role="listbox">
-
+        
         <!-- Slide 1 -->
-        <div class="carousel-item active" style="background-image: url(images/1.jpg);">
+        <div class="carousel-item active" style="background-image: url( {% static "images/1.jpg" %} );">
           <div class="carousel-container">
             <div class="carousel-content animate__animated animate__fadeInUp">
               <h2>Welcome to <span>Sleshmantak</span></h2>
@@ -21,7 +21,7 @@
         </div>
 
         <!-- Slide 2 -->
-        <div class="carousel-item" style="background-image: url(images/2.jpg);  background-size: contain;">
+        <div class="carousel-item" style="background-image: url({% static "images/2.jpg" %});  background-size: contain;">
           <div class="carousel-container">
             <div class="carousel-content animate__animated animate__fadeInUp">
               <h2>Aim:</h2>
@@ -31,7 +31,7 @@
         </div>
 
         <!-- Slide 3 -->
-        <div class="carousel-item" style="background-image: url(images/3.jpg);  ">
+        <div class="carousel-item" style="background-image: url({% static "images/3.jpg" %})  ">
           <div class="carousel-container">
             <div class="carousel-content animate__animated animate__fadeInUp">
               <h2>Believe : We can</h2>
@@ -58,7 +58,7 @@
 
 
 
-        <!-- ======= About Us Section ======= -->
+        <!--  About Us -->
         <section id="about-us" class="about-us">
             <div class="container" data-aos="fade-up">
       
@@ -82,14 +82,14 @@
             </div>
           </section><!-- End About Us Section -->
       
-          <!-- ======= Missions Section ======= -->
+          <!--  Missions  -->
           <section class="mission" >
             <div class="container" data-aos="fade-up">
               <button type="button" class="btn btn-primary fon40" >Our missions :</button>
       
               <div class="row">
                 <div class="col-lg-4 col-md-6 d-flex bg1align-items-stretch bg1" data-aos="zoom-in" data-aos-delay="100" >
-                  <div class="icon-box bg1" style="background-image: url(images/png/1.png);  background-repeat:no-repeat; background-size: cover;">
+                  <div class="icon-box bg1" style="background-image: url({% static "images/png/1.png" %});  background-repeat:no-repeat; background-size: cover;">
                       
                     <h4><a href="Child care">Child care</a></h4>
                     <p style="background-color: rgba(255, 0, 0, 0.3);">To work on child education, child health, nutrition and child rights.</p>
@@ -97,28 +97,28 @@
                 </div>
       
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-                  <div class="icon-box" style="background-image: url(images/png/2.png);  background-size: cover;">
+                  <div class="icon-box" style="background-image: url({% static "images/png/2.png" %});  background-size: cover;">
                     <h4><a href="">Social Issues</a></h4>
                     <p style="background-color: rgba(255, 0, 0, 0.3);">To conduct programs ensuring maternity security, human rights and equity issues.</p>
                   </div>
                 </div>
       
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-                  <div class="icon-box" style="background-image: url(images/png/3.png);  background-size: cover;">
+                  <div class="icon-box" style="background-image: url({% static "images/png/3.png" %});  background-size: cover;">
                     <h4><a href="">Ecology</a></h4>
                     <p style="background-color: rgba(255, 0, 0, 0.3);">Launch conservation programs on water, air and soil for the betterment of ecology via organic movements and ecological campaigns.</p>
                   </div>
                 </div>
       
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
-                  <div class="icon-box" style="background-image: url(images/png/4.png);  background-size: cover;">
+                  <div class="icon-box" style="background-image: url({% static "images/png/4.png" %});  background-size: cover;">
                     <h4><a href="">Disaster and Crisis</a></h4>
                     <p style="background-color: rgba(255, 0, 0, 0.3);">An anonymous platform on disaster and crisis reinforcement and support services.</p>
                   </div>
                 </div>
       
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
-                  <div class="icon-box" style="background-image: url(images/png/5.png);  background-repeat:no-repeat; background-size: contain;">
+                  <div class="icon-box" style="background-image: url{% static "" %}(images/png/5.png);  background-repeat:no-repeat; background-size: contain;">
                     <h4><a href="">Agriculture	</a></h4>
                     <p style="background-color: rgba(255, 0, 0, 0.3);">To initiate and bring innovations on multifunctional learning-hub, based on agriculture for the basics of life.</p>
                   </div>
@@ -146,7 +146,7 @@
               <div class="row portfolio-container" data-aos="fade-up">
       
                 <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                  <img src="images/apps/child1.jpg" class="img-fluid" alt="">
+                  <img src="{% static "images/apps/child1.jpg" %}" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4>Child 1</h4>
                     <p></p>
@@ -154,7 +154,7 @@
                 </div>
       
                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                  <img src="images/apps/agri1.jpg" class="img-fluid" alt="">
+                  <img src="{% static "images/apps/agri1.jpg" %}" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4>Agriculture 1</h4>
                     <p>Web</p>
@@ -163,7 +163,7 @@
                 </div>
       
                 <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                  <img src="images/apps/child2.jpg" class="img-fluid" alt="">
+                  <img src="{% static "images/apps/child2.jpg" %}" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4>Child 2</h4>
                     <p>App</p>
@@ -172,61 +172,61 @@
                 </div>
       
                 <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                  <img src="images/apps/was1.jpg" class="img-fluid" alt="">
+                  <img src={% static "images/apps/was1.jpg" %}" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4>Water Air Soil</h4>
                     <p></p>
-                    <a href="all_files/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+                    <a href="{% static "/img/portfolio/portfolio-4.jpg" %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
                     <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
                   </div>
                 </div>
       
                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                  <img src="images/apps/agri2.jpg" class="img-fluid" alt="">
+                  <img src="{% static "images/apps/agri2.jpg" %}" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4>Agriculture 2</h4>
                     <p>Web</p>
-                    <a href="all_files/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+                    <a href="{% static "img/portfolio/portfolio-5.jpg" %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
                     <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
                   </div>
                 </div>
       
                 <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                  <img src="images/apps/child3.jpg" class="img-fluid" alt="">
+                  <img src="{% static "images/apps/child3.jpg" %}" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4>Child 3</h4>
                     <p>App</p>
-                    <a href="images/apps/child1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+                    <a href="{% static "images/apps/child1.jpg" %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
                     <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
                   </div>
                 </div>
       
                 <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                  <img src="images/apps/was2.jpg" class="img-fluid" alt="">
+                  <img src="{% static "images/apps/was2.jpg" %}" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4>Water Air Soil 2</h4>
                     <p>Card</p>
-                    <a href="images/apps/was2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+                    <a href="{% static "images/apps/was2.jpg" %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
                     <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
                   </div>
                 </div>
       
                 <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                  <img src="images/apps/was3.jpg" class="img-fluid" alt="">
+                  <img src="{% static "images/apps/was3.jpg" %}" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4>Water Air Soil 3</h4>
                     <p>Card</p>
-                    <a href="images/apps/was3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+                    <a href="{% static "images/apps/was3.jpg" %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
                     <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
                   </div>
                 </div>
       
                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                  <img src="images/apps/agri3.jpg" class="img-fluid" alt="">
+                  <img src="{% static "images/apps/agri3.jpg" %}" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4>Agriculture 3</h4>
                     <p>Web</p>
-                    <a href="all_files/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+                    <a href="{% static "apps/" %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
                     <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
                   </div>
                 </div>
@@ -248,7 +248,7 @@
       
                 <div class="col-lg-3 col-md-4 col-6">
                   <div class="client-logo">
-                    <img src="images/profile/1.jpg" class="img-fluid" alt=""><br/>
+                    <img src="{% static "images/profile/1.jpg" %}" class="img-fluid" alt=""><br/>
                     
                   </div>
                   <h1 >Gautam Silwal</h1>
@@ -257,7 +257,7 @@
       
                 <div class="col-lg-3 col-md-4 col-6">
                   <div class="client-logo">
-                    <img src="images/profile/2.jpg" class="img-fluid" alt="">
+                    <img src="{% static "images/profile/2.jpg" %}" class="img-fluid" alt="">
                   </div>
                   <h1 > Prasis Gautam</h1>
                     <p>Technology Director</P>
@@ -265,7 +265,7 @@
       
                 <div class="col-lg-3 col-md-4 col-6">
                   <div class="client-logo">
-                    <img src="images/profile/3.jpg" class="img-fluid" alt="">
+                    <img src="{% static "images/profile/3.jpg" %}" class="img-fluid" alt="">
                   </div>
                   <h1> Kristina Fluff</h1>
                   <p>General Director</p>
@@ -273,7 +273,7 @@
       
                 <div class="col-lg-3 col-md-4 col-6">
                   <div class="client-logo">
-                    <img src="images/profile/4.jpg" class="img-fluid" alt="">
+                    <img src="{% static "images/profile/4.jpg" %}" class="img-fluid" alt="">
                   </div>
                   <h1>Pawin Shrestha</h1>
                     <p>Finance Head</P>
@@ -281,7 +281,7 @@
       
                 <div class="col-lg-3 col-md-4 col-6">
                   <div class="client-logo">
-                    <img src="images/profile/5.jpg" class="img-fluid" alt="">
+                    <img src="{% static "images/profile/5.jpg" %}" class="img-fluid" alt="">
                   </div>
                   <h1> Dipen Ghimire</h1>
                     <p>Strategic Head</P>
@@ -289,7 +289,7 @@
       
                 <div class="col-lg-3 col-md-4 col-6">
                   <div class="client-logo">
-                    <img src="images/profile/6.jpg" class="img-fluid" alt="">
+                    <img src="{% static "images/profile/6.jpg" %}" class="img-fluid" alt="">
                   </div>
                   <h1> Manisha Chaudhaary</h1>
                     <p> Accounts Head</P>
@@ -297,7 +297,7 @@
       
                 <div class="col-lg-3 col-md-4 col-6">
                   <div class="client-logo">
-                    <img src="images/profile/7.jpg" class="img-fluid" alt="">
+                    <img src="{% static "images/profile/7.jpg" %}" class="img-fluid" alt="">
                   </div>
                   <h1> Salena Gomez </h1>
                     <p> Cirriculum/Event Manager</P>
@@ -305,7 +305,7 @@
       
                 <div class="col-lg-3 col-md-4 col-6">
                   <div class="client-logo">
-                    <img src="images/profile/8.jpg" class="img-fluid" alt="">
+                    <img src="{% static "images/profile/8.jpg" %}" class="img-fluid" alt="">
                   </div>			  
                   <h1>Mani Raj Kandel</h1>
                     <p>Security Head</P>
@@ -314,7 +314,8 @@
               </div>
       
             </div>
-          </section><!-- End Our Clients Section -->
+          </section>
+          <!-- CLient End -->
       
       
 
